@@ -3,12 +3,13 @@ namespace DesafioPOO.Models
     public abstract class Smartphone
     {
         public string Numero { get; set; }
-        // TODO: Implementar as propriedades faltantes de acordo com o diagrama
-
+        private string Modelo { get; set; } = "Nokia";
+        private string IMEI { get; set; } = "1234567890123456";
+        private int Memoria { get; set; } = 16;
         public Smartphone(string numero)
         {
             Numero = numero;
-            // TODO: Passar os parâmetros do construtor para as propriedades
+    
         }
 
         public void Ligar()
